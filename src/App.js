@@ -3,6 +3,7 @@ import Accueil from "./components/Accueil";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Liste from "./components/Liste";
+import Error from "./components/Error";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Accueil/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/liste' element={<Liste/>}/>
+        <Route path='/*' element={<Error/>}/>
       </Routes>
     </div>
   );
