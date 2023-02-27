@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Accueil from "./components/Accueil";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
+import Liste from "./components/Liste";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Accueil/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/liste' element={<Liste/>}/>
       </Routes>
     </div>
   );
