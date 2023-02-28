@@ -9,6 +9,7 @@ import Liste from "./components/Liste";
 import Error from "./components/Error";
 import Connexion from "./components/Connexion";
 import MyAccount from "./components/MyAccount";
+import Edit from "./components/Edit";
 import RootLayout from "./layout/RootLayout";
 import { useState } from "react";
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/*' element={<Error/>}/>
         <Route path='/connexion' element={<Connexion setEmail={setMyEmail} setPassword={setMyPassword}/>}/>
         <Route path='/my-account' element={<MyAccount email={myEmail} password={myPassword}/>}/>
+        <Route path='/edit' element={<Edit setEmail={setMyEmail} setPassword={setMyPassword}/>}/>
       </Route>
     )
   )
