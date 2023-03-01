@@ -19,6 +19,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootLayout/>}>
+
         <Route path='/' element={<Accueil/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/liste' element={<Liste/>}/>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/connexion' element={<Connexion setEmail={setMyEmail} setPassword={setMyPassword}/>}/>
         <Route path='/my-account' element={<MyAccount email={myEmail} password={myPassword}/>}/>
         <Route path='/edit' element={<Edit setEmail={setMyEmail} setPassword={setMyPassword}/>}/>
+
       </Route>
     )
   )
